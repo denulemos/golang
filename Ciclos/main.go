@@ -27,6 +27,24 @@ func main() {
 			i = i * 2
 			continue
 		}
-		fmt.Printf("    Paso por aca!")
+		fmt.Printf("    Paso por aca! \n")
+		i++
+
 	}
+
+	var z int = 0
+	//Seccion, no hace nada a nivel ejecucion
+RUTINA:
+	fmt.Printf("Esto con un continue no se mostraria \n")
+	for z < 10 {
+		if z == 4 {
+			z = z + 2
+			fmt.Println("RUTINA sumando 2 a z")
+			//Es como el continue pero en vez de ir al inicio del bucle, va a donde nosotros le digamos
+			goto RUTINA
+		}
+		fmt.Printf("Valor z: %d \n", z)
+		z++
+	}
+
 }
