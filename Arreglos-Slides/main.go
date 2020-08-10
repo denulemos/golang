@@ -25,6 +25,7 @@ func main() {
 
 	variante2()
 	variante3()
+	variante4()
 }
 
 func variante2() {
