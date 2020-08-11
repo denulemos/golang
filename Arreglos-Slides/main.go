@@ -47,7 +47,7 @@ func variante4() {
 	nums := make([]int, 0, 0)
 	//El for es para redimensionar el slice
 	for i := 0; i < 100; i++ {
-		//Append recibe un slice y devuelve un slice
+		//Append recibe un slice y devuelve un slice, el append es ideal usarlo cuando nos quedamos sin espacio, no siempre
 		nums = append(nums, i)
 	}
 	//Termina con un largo 100 y capacidad de 128 por la numeracion binaria, siempre va a reservar un poco mas de capacidad.
