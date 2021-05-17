@@ -15,6 +15,12 @@ var status bool = false
 //Si la variable empieza con mayuscula, podra ser exportado en paquete
 var NumeroPack int = 8
 
+// i = 8 int y j = 42 int, toma los tipos automaticamente
+var i,j = 8, 42
+
+//Constantes
+const pi = 3.14
+
 func main() {
 
 	//Los numero se inicializan en cero
