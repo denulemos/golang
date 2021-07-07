@@ -14,6 +14,7 @@ func main() {
 		fmt.Println("Es falso")
 	}
 
+	// No es necesario el break como en otros lenguajes
 	switch numero := 5; numero {
 	case 1:
 		fmt.Println(1)
@@ -24,6 +25,18 @@ func main() {
 		fmt.Println(5)
 	default:
 		fmt.Println("No cumplio al switch")
+	}
+
+	x := 42
+	if x > 18 {
+		fmt.Println("Condicion comun")
+	}
+
+	// Declaro la variable z en la misma condicion y después la evaluo
+	if z := 42; z > 18 {
+		fmt.Println("Allowed")
+	} else {
+		fmt.Println("Not allowed")
 	}
 
 }
